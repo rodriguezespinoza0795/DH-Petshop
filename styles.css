@@ -1,0 +1,283 @@
+:root {
+    /*colores*/
+    --yellow: #F0A83E;
+    --brown: #3C2313;
+    --background-img: #fbf9f6;
+    --gray: #8A8787;
+}
+
+/* Reiniciar los estilos que el navegador trae por defecto */
+* {
+    box-sizing: border-box;
+    margin:0;
+    padding: 0;
+}
+
+.offers {
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    color: white;
+    padding: 0px 15px;
+}
+
+select {
+    background-color: black;
+    border: none;
+    color: white;
+}
+/*EMPIEZA HEADER*/
+
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--yellow);
+    padding: 10px 20px;
+    align-items: center;
+}
+
+header img {
+    height: 19px;
+}
+
+header nav {
+    display: none;
+    color: white;
+    list-style: none;
+    gap: 40px;
+}
+
+.bx-menu {
+    color: white;
+}
+
+/*TERMINA HEADER*/
+/*EMPIEZA HERO*/
+
+.hero {
+    width: 100%;
+    min-width: 320px;
+    height: 60vh;
+    background-image: url('./assets/img/Hero.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    display: flex;
+    justify-content: end;
+}
+
+.hero section {
+    height: 100%;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: end;
+    padding: 15px;
+    gap: 10px;
+}
+
+.hero section h3 {
+    background-color: white;
+    padding: 10px 20px;
+    border-radius: 9px;
+    color: var(--brown);
+}
+.hero section p {
+    background-color: #ffffff87
+}
+
+.hero section button {
+    font-size: 1rem;
+    background-color: var(--yellow);
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+}
+
+/*TERMINA HERO*/
+
+/*EMPIEZA PRODUCTS*/
+.products {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+.products > img{
+    width: 70px;
+    padding: 10px 0px;
+}
+
+.products h2 {
+    font-size: xx-large;
+    width: 50%;
+    text-align: center;
+    color: var(--brown);
+    padding: 10px 0px;
+}
+
+.products ul {
+    display: flex;
+    gap: 50px;
+    list-style: none;
+}
+
+.products > div {
+    padding: 30px 0px;
+    display: flex;
+    flex-flow: column;
+    gap: 25px;
+}
+
+.card {
+    text-align: center;
+    background-color: var(--background-img);
+}
+
+.card p {
+    padding: 5px 0px;
+    color: var(--yellow);
+}
+
+/*TERMINA PRODUCTS*/
+
+/*EMPIEZA CONTACT US*/
+
+.contact-us {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    gap: 5px;
+}
+
+.contact-us h2{
+    font-size: xx-large;
+    width: 50%;
+    text-align: center;
+    color: var(--brown);
+    padding: 10px 0px;
+}
+
+.contact-us form {
+    display: flex;
+    flex-flow: column;
+    padding: 10px 0px;
+    gap: 5px;
+}
+
+.contact-us form input {
+    background-color: var(--brown);
+    padding: 10px;
+    border-radius: 15px;
+    width: 250px;
+}
+
+.contact-us div {
+    display: flex;
+    padding: 25px 0px;
+    gap: 5px;
+}
+
+.contact-us div button {
+    border: none;
+    padding: 10px 50px;
+    border-radius: 25px;
+    color: white;
+}
+
+.gray {
+    background-color: var(--gray);
+}
+
+.orange {
+    background-color: var(--yellow);
+}
+
+
+/*TERMINA CONTACT US*/
+
+/*EMPIEZA NEWSLETTER*/
+
+.newsletter {
+    display: flex;
+    background-color: var(--yellow);
+    padding: 10px;
+    flex-flow: column;
+    align-items: center;
+}
+
+.newsletter div {
+    display: flex;
+    color: white;
+    padding: 5px 10px;
+    gap: 25px;
+}
+
+.newsletter form {
+    display: flex;
+    padding: 5px 10px;
+    gap: 10px;
+}
+
+.newsletter form input {
+    padding: 10px;
+    border-radius: 15px;
+    width: 250px;
+    border: none;
+}
+
+.newsletter form button {
+    padding: 10px;
+    border-radius: 15px;
+    border: none;
+    color: white;
+}
+
+.brown {
+    background-color: var(--brown);
+}
+/*TERMINA NEWSLETTER*/
+
+/*EMPIEZA FOOTER*/
+footer {
+    background-color: var(--brown);
+    color: white;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    padding: 15px;
+    gap: 10px;
+}
+
+footer > section {
+    display: flex;
+    flex-flow: column;
+    gap: 10px;
+
+}
+
+footer > section > article {
+    display: flex;
+    width: 250px;
+    align-items: center;
+    gap: 15px;
+}
+
+footer > section > article p {
+    color: var(--gray);
+    font-weight: bold;
+    font-size: small;
+}
+
+.bx-border-circle {
+    background-color: var(--gray);
+    padding: 0.1em;
+}
+/*TERMINA FOOTER*/
+
+.rights {
+    background-color: black;
+    color: white;
+    text-align: center;
+}

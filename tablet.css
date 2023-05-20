@@ -1,0 +1,32 @@
+.bx-menu {
+    display: none;
+}
+
+header nav {
+    display: flex;
+}
+
+header li {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.hero section {
+    align-items: center;
+}
+
+.products > div {
+    flex-flow: row;
+}
+
+.newsletter {
+    flex-flow: row;
+    justify-content: space-between;
+}
+
+footer {
+    flex-flow: row-reverse;
+    justify-content: space-between;
+    padding: 15px 45px;
+}
