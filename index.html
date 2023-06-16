@@ -4,13 +4,18 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap"
+      rel="stylesheet"
+    />
     <title>FrontCat&Dog</title>
     <link
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
-    <link rel="stylesheet" href="tablet.css" media="(min-width: 769px)" />
   </head>
   <body>
     <section class="offers">
@@ -29,20 +34,24 @@
       <i class="bx bx-menu bx-sm"></i>
       <nav>
         <li>
-          <img src="./assets/img/pawprint_white.png" alt="Logo FrontCat&Dog" />
-          Categorías
+          <a href="#">
+            Categorías
+          </a>
         </li>
         <li>
-          <img src="./assets/img/pawprint_white.png" alt="Logo FrontCat&Dog" />
-          Pets
+          <a href="#">
+            Pets
+          </a>
         </li>
         <li>
-          <img src="./assets/img/pawprint_white.png" alt="Logo FrontCat&Dog" />
-          Nosotros
+          <a href="#">
+            Nosotros
+          </a>
         </li>
         <li>
-          <img src="./assets/img/pawprint_white.png" alt="Logo FrontCat&Dog" />
-          Contáctanos
+          <a href="#">
+            Contáctanos
+          </a>
         </li>
       </nav>
     </header>
@@ -57,7 +66,7 @@
       <section class="products">
         <img src="./assets/img/pawprint.png" alt="Logo FrontCat&Dog" />
         <h2>Productos Destacados</h2>
-        <ul>
+        <ul class="featured-products">
           <li>Comederos</li>
           <li>Accesorios</li>
           <li>Comida</li>
@@ -65,17 +74,17 @@
         <div>
           <article class="card">
             <img src="./assets/img/churrasquito.png" alt="churrasquito" />
-            <h5>Juguete Churrasquito</h5>
+            <h4>Juguete Churrasquito</h4>
             <p>$150</p>
           </article>
           <article class="card">
-            <img src="./assets/img/churrasquito.png" alt="churrasquito" />
-            <h5>Juguete Churrasquito</h5>
+            <img src="./assets/img/comedero.png" alt="churrasquito" />
+            <h4>Comedor para perro</h4>
             <p>$250</p>
           </article>
           <article class="card">
             <img src="./assets/img/Huesito.png" alt="Huesito" />
-            <h5>Juguete Huesito</h5>
+            <h4>Juguete Huesito</h4>
             <p>$150</p>
           </article>
         </div>
@@ -83,14 +92,14 @@
       <section class="contact-us">
         <h2>Contáctanos</h2>
         <form>
-          <input type="tex" placeholder="Nombre y Apellido" />
-          <input type="email" placeholder="Ingresa tu correo electrónico" />
-          <input type="tel" placeholder="Teléfono" />
+          <input type="tex" placeholder="Nombre y Apellido" class="input__text"/>
+          <input type="email" placeholder="Ingresa tu correo electrónico" class="input__text"/>
+          <input type="tel" placeholder="Teléfono" class="input__text"/>
+          <div>
+            <input type="reset" class="reset--button" value="Resetear"></input>
+            <input type="submit" class="submit--button" value="Enviar"></input>
+          </div>
         </form>
-        <div>
-          <button class="gray">Resetear</button>
-          <button class="orange">Enviar</button>
-        </div>
       </section>
       <section class="newsletter">
         <div>
@@ -98,8 +107,8 @@
           <h4>Suscríbete para más novedades</h4>
         </div>
         <form>
-          <input type="email" placeholder="Ingresa tu correo electrónico" />
-          <button class="brown">Suscribirme</button>
+          <input type="email" placeholder="Ingresa tu correo electrónico" required class="input"/>
+          <input type="submit" class="input__submit" value="Suscribirme"></input>
         </form>
       </section>
       <footer>

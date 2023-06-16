@@ -11,6 +11,7 @@
     box-sizing: border-box;
     margin:0;
     padding: 0;
+    font-family: 'Roboto', sans-serif;
 }
 
 .offers {
@@ -32,23 +33,55 @@ header {
     display: flex;
     justify-content: space-between;
     background-color: var(--yellow);
-    padding: 10px 20px;
+    padding: 20px 20px;
     align-items: center;
-}
-
-header img {
-    height: 19px;
 }
 
 header nav {
     display: none;
-    color: white;
     list-style: none;
     gap: 40px;
 }
 
+header nav li a {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: white;
+    text-decoration: none;
+}
+
+header nav li a::before {
+    content: url("./assets/img/pawprint_white.png");
+}
+
 .bx-menu {
     color: white;
+    cursor: pointer;
+}
+
+.bx-menu:hover {
+    background-color: #ffffff3f;
+}
+
+header nav li a:hover {
+    text-decoration: underline;
+}
+
+@media (min-width: 769px) {
+    .bx-menu {
+        display: none;
+    }
+    
+    header nav {
+        display: flex;
+    }
+    
+    header li {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+    }
 }
 
 /*TERMINA HEADER*/
@@ -79,10 +112,14 @@ header nav {
 .hero section h3 {
     background-color: white;
     padding: 10px 20px;
-    border-radius: 9px;
+    border-radius: 10px;
     color: var(--brown);
+    font-size: 1.7rem;
+    font-weight: 400;
 }
 .hero section p {
+    border-radius: 10px;
+    padding: 5px;
     background-color: #ffffff87
 }
 
@@ -90,9 +127,15 @@ header nav {
     font-size: 1rem;
     background-color: var(--yellow);
     border: none;
-    padding: 10px;
+    padding: 20px 25px;
     border-radius: 5px;
     color: white;
+}
+
+@media (min-width: 769px) {
+    .hero section {
+        align-items: center;
+    }
 }
 
 /*TERMINA HERO*/
@@ -110,7 +153,7 @@ header nav {
 }
 
 .products h2 {
-    font-size: xx-large;
+    font-size: 2.5rem;
     width: 50%;
     text-align: center;
     color: var(--brown);
@@ -119,7 +162,7 @@ header nav {
 
 .products ul {
     display: flex;
-    gap: 50px;
+    gap: 25px;
     list-style: none;
 }
 
@@ -138,6 +181,18 @@ header nav {
 .card p {
     padding: 5px 0px;
     color: var(--yellow);
+    font-weight: bold;
+}
+
+.featured-products li:not(:last-child)::after {
+    padding-left: 25px;
+    content: "-";
+}
+
+@media (min-width: 769px) {
+    .products > div {
+        flex-flow: row;
+    }
 }
 
 /*TERMINA PRODUCTS*/
@@ -164,13 +219,20 @@ header nav {
     flex-flow: column;
     padding: 10px 0px;
     gap: 5px;
+    align-items: center;
 }
 
-.contact-us form input {
+.input__text {
     background-color: var(--brown);
     padding: 10px;
     border-radius: 15px;
-    width: 250px;
+    width: 340px;
+    color: white;
+}
+
+input::placeholder {
+    font-size: 0.5rem;
+    color: white;
 }
 
 .contact-us div {
@@ -179,21 +241,24 @@ header nav {
     gap: 5px;
 }
 
-.contact-us div button {
+.contact-us div input {
     border: none;
     padding: 10px 50px;
     border-radius: 25px;
     color: white;
 }
 
-.gray {
+.contact-us input:hover {
+    opacity: 0.9;
+}
+
+.reset--button {
     background-color: var(--gray);
 }
 
-.orange {
+.submit--button {
     background-color: var(--yellow);
 }
-
 
 /*TERMINA CONTACT US*/
 
@@ -220,22 +285,33 @@ header nav {
     gap: 10px;
 }
 
-.newsletter form input {
+.newsletter .input {
     padding: 10px;
     border-radius: 15px;
     width: 250px;
     border: none;
 }
 
-.newsletter form button {
+.newsletter .input::placeholder {
+    color: gray;
+}
+
+.newsletter form .input__submit {
     padding: 10px;
     border-radius: 15px;
     border: none;
     color: white;
 }
 
-.brown {
+.input__submit {
     background-color: var(--brown);
+}
+
+@media (min-width: 769px) {
+    .newsletter {
+        flex-flow: row;
+        justify-content: space-between;
+    }
 }
 /*TERMINA NEWSLETTER*/
 
@@ -273,6 +349,14 @@ footer > section > article p {
 .bx-border-circle {
     background-color: var(--gray);
     padding: 0.1em;
+}
+
+@media (min-width: 769px) {
+    footer {
+        flex-flow: row-reverse;
+        justify-content: space-between;
+        padding: 15px 45px;
+    }
 }
 /*TERMINA FOOTER*/
 
