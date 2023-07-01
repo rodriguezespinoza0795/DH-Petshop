@@ -1,0 +1,47 @@
+/*EMPIEZA NEWSLETTER*/
+
+.newsletter {
+    display: flex;
+    background-color: var(--yellow);
+    padding: 10px;
+    flex-flow: column;
+    align-items: center;
+    div {
+        display: flex;
+        color: white;
+        padding: 5px 10px;
+        gap: 25px;
+    }
+    form {
+        display: flex;
+        padding: 5px 10px;
+        gap: 10px;
+        .input__submit {
+            padding: 10px;
+            border-radius: 15px;
+            border: none;
+            color: white;
+        }
+    }
+    .input {
+        padding: 10px;
+        border-radius: 15px;
+        width: 250px;
+        border: none;
+        &::placeholder {
+            color: gray;
+        }
+    }
+}
+
+.input__submit {
+    background-color: var(--brown);
+}
+
+@media (min-width: 769px) {
+    .newsletter {
+        flex-flow: row;
+        justify-content: space-between;
+    }
+}
+/*TERMINA NEWSLETTER*/

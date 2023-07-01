@@ -1,0 +1,56 @@
+/*EMPIEZA HEADER*/
+
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--yellow);
+    padding: 20px 20px;
+    align-items: center;
+    nav {
+        display: none;
+        list-style: none;
+        gap: 40px;
+    }
+    li {
+        a {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            color: white;
+            text-decoration: none;
+            &::before {
+                content: url("../assets/img/pawprint_white.png");
+            }
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+.bx-menu {
+    color: white;
+    cursor: pointer;
+    &:hover {
+        background-color: #ffffff3f;
+    }
+}
+
+@media (min-width: 769px) {
+    .bx-menu {
+        display: none;
+    }
+    
+    header {
+        nav {
+            display: flex;
+        }
+        li {
+           display: flex;
+           align-items: center;
+           gap: 5px;
+       }
+    }
+}
+
+/*TERMINA HEADER*/

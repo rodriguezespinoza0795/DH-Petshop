@@ -1,0 +1,52 @@
+/*EMPIEZA HERO*/
+
+.hero {
+    width: 100%;
+    min-width: 320px;
+    height: 60vh;
+    background-image: url('../assets/img/Hero.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    display: flex;
+    justify-content: end;
+    section {
+        height: 100%;
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: end;
+        padding: 15px;
+        gap: 10px;
+        h3 {
+            background-color: white;
+            padding: 10px 20px;
+            border-radius: 10px;
+            color: var(--brown);
+            font-size: 1.7rem;
+            font-weight: 400;
+        }
+        p {
+            border-radius: 10px;
+            padding: 5px;
+            background-color: #ffffff87
+        }
+        button {
+            font-size: 1rem;
+            background-color: var(--yellow);
+            border: none;
+            padding: 20px 25px;
+            border-radius: 5px;
+            color: white;
+        }
+    }
+}
+
+
+@media (min-width: 769px) {
+    .hero section {
+        align-items: center;
+    }
+}
+
+/*TERMINA HERO*/

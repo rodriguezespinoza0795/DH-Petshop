@@ -1,0 +1,60 @@
+/*EMPIEZA CONTACT US*/
+
+.contact-us {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    gap: 5px;
+    h2{
+        font-size: xx-large;
+        width: 50%;
+        text-align: center;
+        color: var(--brown);
+        padding: 10px 0px;
+    }
+    form {
+        display: flex;
+        flex-flow: column;
+        padding: 10px 0px;
+        gap: 5px;
+        align-items: center;
+    }
+    div {
+        display: flex;
+        padding: 25px 0px;
+        gap: 5px;
+        input {
+            border: none;
+            padding: 10px 50px;
+            border-radius: 25px;
+            color: white;
+        }
+    }
+}
+
+.input__text {
+    background-color: var(--brown);
+    padding: 10px;
+    border-radius: 15px;
+    width: 340px;
+    color: white;
+}
+
+input::placeholder {
+    font-size: 0.5rem;
+    color: white;
+}
+
+.contact-us input:hover {
+    opacity: 0.9;
+}
+
+.reset--button {
+    background-color: var(--gray);
+}
+
+.submit--button {
+    background-color: var(--yellow);
+}
+
+/*TERMINA CONTACT US*/

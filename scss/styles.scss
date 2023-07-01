@@ -1,0 +1,36 @@
+:root {
+    /*colores*/
+    --yellow: #F0A83E;
+    --brown: #3C2313;
+    --background-img: #fbf9f6;
+    --gray: #8A8787;
+}
+
+/* Reiniciar los estilos que el navegador trae por defecto */
+* {
+    box-sizing: border-box;
+    margin:0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.offers {
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    color: white;
+    padding: 0px 15px;
+}
+
+select {
+    background-color: black;
+    border: none;
+    color: white;
+}
+
+@import "./_header.scss";
+@import "./hero.scss";
+@import "./products.scss";
+@import "./contactUs.scss";
+@import "./newsletter.scss";
+@import "./footer.scss";
